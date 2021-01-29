@@ -1,5 +1,5 @@
-DIVIDER_LINE = '__________________________________________________________________________________________________________'
 
+DIVIDER_LINE = '__________________________________________________________________________________________________________'
 
 class AbstractNode:
     """
@@ -26,11 +26,11 @@ class AbstractNode:
 
 class AbstractAlgoConfigurator:
     """
-    abstract Heuristic function class take a node as parent and return the
-    successors, must be expanded for different problems
+    abstract configuration class
 
     calc_heuristic(self) -> define heuristic function to calculate heuristic based on optional method
-    goal_test(self)       -> implement for algorithm is_goal checking
+    get_successors(self) -> take a node and expand it to reach the successors then return successors as a list
+    goal_test(self)      -> implement for algorithm is_goal checking
     """
 
     def calc_heuristic(self):
