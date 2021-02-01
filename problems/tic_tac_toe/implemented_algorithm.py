@@ -1,5 +1,4 @@
 import copy
-import math
 
 from algorithms.alpha_beta_pruning import AbstractNode, AbstractAlgoConfigurator
 

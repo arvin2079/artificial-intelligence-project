@@ -25,7 +25,7 @@ class AbstractAlgoConfigurator:
     """
     abstract configuration class
 
-    utility_function(self) -> define the utility function to calculate the utiliry value for each node.
+    utility_function(self) -> define the utility function to calculate the utility value for each node.
     get_successors(self)   -> take a node and expand it to reach the successors then return successors as a list.
     terminal_test(self)    -> check if state of the node is terminal else return -2. then if first player has worn return 1 but if
                               it has lost return -1 else if it's a draw return 0
