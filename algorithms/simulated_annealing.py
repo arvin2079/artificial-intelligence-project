@@ -16,9 +16,9 @@ class AbstractAlgoConfigurator:
     """
     abstract configuration class
 
-    calc_heuristic(self)        -> define heuristic function to calculate heuristic based on optional method
-    get_random_successors(self) -> take a state and return new random state from that state
-    goal_test(self)             -> implement for algorithm is_goal checking
+    calc_heuristic(self)        -> define heuristic function to calculate heuristic based on optional method.
+    get_random_successors(self) -> take a state and return new random state from that state.
+    goal_test(self)             -> implement for algorithm is_goal checking.
     """
 
     def __init__(self, initial_temp, temp_step):

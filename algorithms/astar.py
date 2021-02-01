@@ -4,10 +4,8 @@ DIVIDER_LINE = '________________________________________________________________
 class AbstractNode:
     """
     Astar node model, can be expanded for different problems
-    step_cost is cost of path from parent to current node
+    step_cost is cost of path from parent to current node.
     """
-
-    ## step cost is from parent to current node
 
     def __init__(self, heuristic_value, path_cost, step_cost, parent=None):
         self.heu_value = heuristic_value
@@ -28,9 +26,9 @@ class AbstractAlgoConfigurator:
     """
     abstract configuration class
 
-    calc_heuristic(self) -> define heuristic function to calculate heuristic based on optional method
-    get_successors(self) -> take a node and expand it to reach the successors then return successors as a list
-    goal_test(self)      -> implement for algorithm is_goal checking
+    calc_heuristic(self) -> define heuristic function to calculate heuristic based on optional method.
+    get_successors(self) -> take a node and expand it to reach the successors then return successors as a list.
+    goal_test(self)      -> implement for algorithm is_goal checking.
     """
 
     def calc_heuristic(self):
