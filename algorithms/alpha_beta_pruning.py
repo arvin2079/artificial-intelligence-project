@@ -45,7 +45,17 @@ class AbstractAlgoConfigurator:
 
 
 class AlphaBetaPruning:
+    """
+    AlphaBetaPruning algorithm implementation based on abstraction that make it very flexible to be implemented for any
+    custom problem like Tic-Tac-Toe like the example in problem directory. the implementation is suited for two-player
+    games.
 
+    it has two special function which is:
+    minimizer(self)     -> take node, expand the successors, and select the best fitted node by looking forward in
+    search tree. by best fitted node i meant to select a successor which result in providing best or at least better
+    situation for minimizer player of the game.
+    maximizer(self)     -> exact the same functionality of minimizer implemented for maximizer player of the game.
+    """
     def __init__(self, initial_node: AbstractNode, conf: AbstractAlgoConfigurator):
         self.initial_node = initial_node
         self.conf = conf

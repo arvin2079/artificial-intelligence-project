@@ -45,6 +45,8 @@ class SimulatedAnnealing:
     """
     if minimize is "TRUE" then the algorithm will search for universal minimum value
     and "FALSE" for maximizing. 
+    in saerch function you can set print_attempts to True thus search logs would be printed in terminal while the 
+    algorithm is working.
     """
 
     def search(self, print_attempts=False):

@@ -44,7 +44,9 @@ class AbstractAlgoConfigurator:
 class AbstractEvaluationFunc:
     """
     abstract Evaluation function class take list of nodes and return most evaluated
-    node, must be expanded for different problems
+    node, must be expanded for different problems.
+    in saerch function you can set print_attempts to True thus search logs would be printed in terminal while the
+    algorithm is working.
 
     get_next(self) -> implement to retrive "next_evaluated_node"
     """
