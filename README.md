@@ -23,6 +23,28 @@ The state of some physical systems, and the function _E_(_s_) to be minimized, i
 ## Algorithms Implementation Description
 ### A-Star
 Astar class take three object of initial_node, configuration and evaluation_function. also has two function of *has_more_node(self)*  for checking if is there any node in open_list or not and *search(self, print_attempts)* which is logic class of A* algorithm implementation. in saerch function you can set print_attempts to True thus search logs would be printed in terminal while the algorithm is working.
+
+## MIT License
+
+Copyright (c) 2021 ArvinSadeghi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 > if search function return None it means search failed
 
 related Abstract classes:
