@@ -24,27 +24,6 @@ The state of some physical systems, and the function _E_(_s_) to be minimized, i
 ### A-Star
 Astar class take three object of initial_node, configuration and evaluation_function. also has two function of *has_more_node(self)*  for checking if is there any node in open_list or not and *search(self, print_attempts)* which is logic class of A* algorithm implementation. in saerch function you can set print_attempts to True thus search logs would be printed in terminal while the algorithm is working.
 
-## MIT License
-
-Copyright (c) 2021 ArvinSadeghi
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 > if search function return None it means search failed
 
 related Abstract classes:
@@ -88,3 +67,25 @@ Logic part is consist of classes below :
 	- *get_successor(self, node, is_maximizer) -> list:* take node and is_maximizer and then return list of successor for that node, if is_maximizer was True it would return list of successor for maximizer node else return for minimizer node.
 	- *terminal_test(self, node) -> int*: take a node and check if it is terminal or not.if the state is one the *draw, win, or lose* it would detect and then return 1 for win, -1 for lose and 0 for draw else if none, return -2.
 	- *utility_function(self) -> float*: take the node state and return the utility value by subtracting possible ways of winning for minimizer or computer from possible ways of winning for maximizer or player.
+
+## MIT License
+
+Copyright (c) 2021 ArvinSadeghi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
