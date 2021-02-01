@@ -12,14 +12,20 @@ with one usage example for each.
 
 ![f(n)=g(n)+h(n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/5c05c9af6fa9d56e8faf12460bf98ebf9f936581)
 where  n  is the next node on the path,  _g_(_n_)  is the cost of the path from the start node to  n, and  _h_(_n_)  is a  heuristic function that estimates the cost of the cheapest path from  n  to the goal.
+
 ![A-Star flowchart](https://github.com/arvin2079/artificial-intelligence-project/blob/master/media/Flow-chart-of-A-star-algorithm.png)
+
 ### Simulated-Annealing
 **Simulated annealing** (**SA**) is a probabilistic for approximating the global optimum of a given function. Specifically, it is a metaheuristic to approximate global optimization in a large search space for an optimization problem. 
 The state of some physical systems, and the function _E_(_s_) to be minimized, is analogous to the internal energy of the system in that state. The goal is to bring the system, from an arbitrary _initial state_, to a state with the minimum possible energy.
+
 ![SA implementation on hillclimbing](https://github.com/arvin2079/artificial-intelligence-project/blob/master/media/Hill_Climbing_with_Simulated_Annealing.gif)
+
 ###  α-β Pruning
 **Alpha–beta pruning** algorithm implementation based on abstraction that make it very flexible to be implemented for any custom problem like Tic-Tac-Toe like the example in problem directory. the implementation is suited for two-player games. It stops evaluating a move when at least one possibility has been found that proves the move to be worse than a previously examined move. Such moves need not be evaluated further. When applied to a standard minimax tree, it returns the same move as minimax would, but prunes away branches that cannot possibly influence the final decision.
+
 ![minimax with alpha beta pruning](https://github.com/arvin2079/artificial-intelligence-project/blob/master/media/20090615232625!Minmaxab.gif)
+
 ## Algorithms Implementation Description
 ### A-Star
 Astar class take three object of initial_node, configuration and evaluation_function. also has two function of *has_more_node(self)*  for checking if is there any node in open_list or not and *search(self, print_attempts)* which is logic class of A* algorithm implementation. in saerch function you can set print_attempts to True thus search logs would be printed in terminal while the algorithm is working.
